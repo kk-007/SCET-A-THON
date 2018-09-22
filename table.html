@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+
+  <style>
+  <style>
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+  .form-group.required .control-label:after {
+    content:"*";
+    color: red;
+  }
+  .control-label
+  {
+    width: 100%;
+  }
+
+  .mdl-layout__header-row {
+    background-color: white;
+    color: #e62e00;
+  }
+  .demo-card-wide.mdl-card {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    padding-bottom: 24px;
+  }
+  .demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+  }
+  .demo-card-wide > .mdl-card__menu {
+    color: #fff;
+  }
+  .btn-my-css {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    color: #e62e00;
+    text-decoration: none;
+  }
+  a:active {
+    text-decoration: none;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+  }
+  .submit-detail {
+    font-weight: bold;
+  }
+  .mdl-layout__tab {
+    font-weight: 500;
+  }
+  @media (max-width: 479px) {
+    .demo-card-wide.mdl-card{
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  </style>
+
+</style>
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <main class="mdl-layout__content">
+      <form>
+        <div class="page-content">
+          <div class="student1-data" style="position:relative;">
+            <div class="container demo-card-wide mdl-card mdl-shadow--8dp">
+              <!--Person 1  -->
+              <div class="form-group required ">
+                <label class="control-label" for="input1">
+                  Name :</label>
+                  <input type="text" class="from-control name1 not-null" id="input1" placeholder="Enter Name" required/>
+                </div>
+                <div class="form-group required ">
+                  <label class="control-label" for="input2">
+                    Email:</label>
+                    <input type="email" class="from-control email1 not-null" id="input2" placeholder="Enter Email" required/>
+                  </div>
+                  <div class="form-group required ">
+                    <label class="control-label" for="input3">
+                      Phone No:</label>
+                      <input type="number" class="from-control phone1 not-null" id="input3" placeholder="Enter Phone Number" required/>
+                    </div>
+                    <div class="form-group required ">
+                      <label class="control-label" for="input4">
+                        College: </label>
+                        <input type="text" class="from-control college1 not-null" id="input4" placeholder="Enter College Name" required/>
+                      </div>
+                      <div class="form-group required ">
+                        <label class="control-label" for="input5">
+                          Branch : </label>
+                          <input type="text" class="from-control branch1 not-null" id="input5" placeholder="Enter Branch" required/>
+                        </div>
+                        <div class="form-group required ">
+                          <label class="control-label" for="input6">
+                            Semester : </label>
+                            <input type="number" class="from-control semester1 not-null" id="input6" placeholder="Enter Semester" required/>
+                          </div>
+                          <!-- abstract -->
+
+
+                          <div class="form-group required ">
+                            <label class="control-label" for="input7">
+                              Title: </label>
+                              <input type="text" class="from-control title not-null" id="input7" placeholder="Enter Title" required/>
+                            </div>
+                            <div class="form-group required ">
+                              <label class="control-label" for="input8">
+                                File: </label>
+                                <input type="file" class="from-control file not-null" id="input8" name="file[]" required multiple/>
+                              </div>
+                              <!--Person 2 Person 3 & Person 4  -->
+
+                              <div class="col-md-12 col-xs-12 col-sm-12">
+                                <div class="col-md-4 col-xs-12 col-sm-12">
+                                  <label >Member 2</label>
+                                  <div class="form-group required">
+                                    <label class="control-label" for="input9">
+                                      Name : </label>
+                                      <input type="text" class="from-control name2 not-null" id="input9" placeholder="Enter Name" required/>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 col-xs-12 col-sm-12">
+                                    <label >Member 3</label>
+                                    <div class="form-group required">
+                                      <label class="control-label" for="input9">
+                                        Name : </label>
+                                        <input type="text" class="from-control name2 not-null" id="input9" placeholder="Enter Name" required/>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 col-sm-12">
+                                      <label >Member 4</label>
+                                      <div class="form-group required">
+                                        <label class="control-label" for="input9">
+                                          Name : </label>
+                                          <input type="text" class="from-control name2 not-null" id="input9" placeholder="Enter Name" required/>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </main>
+                        </div>
+                      </body>
+                      </html>

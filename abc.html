@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SCAT-A-THON">
+  <meta name="author" content="SCAT-A-THON 2018 WEB-TEAM">
+
+  <title>SCET-A-THON</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/everloop.png" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="./js/main.js"></script> -->
+
+  <!-- Custom Fonts -->
+  <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="./css/grayscale.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+
+  <style type="text/css" id="custom-fonts">
+  /* custom fonts */
+  @font-face {font-family: 'Roboto Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.ttf') format('truetype');}
+  @font-face {font-family: 'Roboto Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.woff') format('woff');}
+  @font-face {font-family: 'Roboto Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.woff') format('woff');}
+  @font-face {font-family: 'Apercu Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.woff') format('woff');}
+  @font-face {font-family: 'Apercu Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.woff') format('woff');}
+  @font-face {font-family: 'Apercu Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.woff') format('woff');}
+  @font-face {font-family: 'Sharp Sans Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.woff') format('woff');}
+  @font-face {font-family: 'Sharp Sans Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.woff') format('woff');}
+  @font-face {font-family: 'Sharp Sans Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.woff') format('woff');}
+  @font-face {font-family: 'FreigSanProBold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.otf') format('opentype');}
+  @font-face {font-family: 'FreigSanProMed';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.otf') format('opentype');}
+  @font-face {font-family: 'FaktSlabProMedium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.otf') format('opentype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.eot') format('eot');}
+
+  /*  Form Style*/
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+  .form-group.required .control-label:after {
+    content:"*";
+    color: red;
+  }
+  .mdl-layout__header-row {
+    background-color: white;
+    color: #e62e00;
+  }
+  .demo-card-wide.mdl-card {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    padding-bottom: 24px;
+  }
+  .demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+  }
+  .demo-card-wide > .mdl-card__menu {
+    color: #fff;
+  }
+  .btn-my-css {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    color: #e62e00;
+    text-decoration: none;
+  }
+  a:active {
+    text-decoration: none;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+
+  }
+  p{text-align: justify;}
+  .submit-detail {
+    font-weight: bold;
+  }
+  .mdl-layout__tab {
+    font-weight: 500;
+  }
+  @media (max-width: 479px) {
+    .demo-card-wide.mdl-card{
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  label{
+    font-weight: 200;
+    font-size: 18px;
+  }
+  textarea
+  {
+    resize: vertical;
+  }
+  .form-control
+  {
+    /* background-color: rgba(75,75,75,1); */
+    /* color: rgba(255,255,255,1); */
+    color: white;
+    /* background-color: rgba(134,170,184); */
+    background-color: rgba(35,40,65,0.8);
+  }
+
+  .options
+  {
+    cursor: pointer;
+    margin:  0 2px;
+    border-radius: 50%;
+    padding: 10px;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    border: none;
+    display: inline-block;
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .selection-options
+  {
+    background-color: rgba(40,40,100,1);
+  }
+  .student1,.student2,.student3,.student4{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .student1 h1,.student2 h1,.student3 h1,.student4 h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .m_heading{
+    float:right;
+  }
+  .mtable{
+    font-size: 18px;
+  }
+  hr{
+    margin: 0;
+  }
+  .m_map{
+    height: 300px;
+    width: auto;
+  }
+  .img-about
+  {
+    width:45%;
+    /* margin-left:25%; */
+  }
+  .about-img-text
+  {
+    padding:0px;
+    font-Size:25px;
+  }
+  .m_card-view{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    /* margin: 15px;
+    padding: 15px; */
+    /* border-radius: 15px; */
+    position: relative;
+    display: flex;
+    -webkit-box-direction:normal;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0px 5px 20px 5px rgba(0,0,0,0.12);
+  }
+  .m_pt{
+    width: 50%;
+    margin: auto;
+  }
+  @media screen and (max-width: 450px) {
+    .m_pt{
+      width: 100%;
+      margin: 0;
+    }
+    .m_card-view .row{
+      margin: 0;
+    }
+    .m_card-view{
+      padding-top: 15px;
+      padding-bottom: 25px;
+    }
+    .inner_p p{
+      font-size: 14px;
+    }
+    .m_map{
+      height: 150px;
+      width: auto;
+      padding-bottom: 20px;
+    }
+    .mtable{
+      font-size: 12px;
+    }
+    h2{
+      font-size: 28px;
+    }
+    .m_heading{
+      float:none;
+    }
+    .intro{
+      background-position: 12% -20%;
+    }
+    .intro h1{
+      color: #fff;
+    }
+    .student1,.student2,.student3,.student4{
+      padding: 10px;
+    }
+    .student1 h1,.student2 h1,.student3 h1,.student4 h1{
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+    .department-header{
+      font-size:23px;
+    }
+    .about-img-text
+    {
+      padding:0px;
+      font-Size:18px;
+    }
+    .img-about
+    {
+      width:80%;
+    }
+    .mfooter{
+      font-size: 10px;
+      padding-bottom: 10px;
+    }
+    .mfooter b{
+      font-size: 12px;
+    }
+  }
+  </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          Menu <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand page-scroll text-center" href="#page-top">
+          <img id="everloop" src="img/everloop.png"/> <span class="hidden-xs hidden-sm ">SCET-A-THON</span>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#about">The Hackathon</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#generalRules">Rules</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#schedule">Schedule</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#projects">Theme</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#location">Location</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Register</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#footer">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- Intro Header -->
+  <header class="intro">
+    <div class="intro-body">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="text-center m_heading">
+            <h1 class="brand-heading main-h1" style="margin-bottom: 0px;">SCET</br>Hackathon</h1>
+            <h4 class="main-h1 text-center" style="margin-top: 0px; color: white; margin-bottom: 0px;">2<sup>nd</sup> October, 2018</br><p style="text-align:center;font-size:16px; margin-bottom:0;">8 AM to 8 PM</p></h4></br>
+            <p class="intro-text" style="text-align:center; margin:0;">Let's Make Surrounding Smart</p>
+          </div>
+        </div>
+        <a href="#about-college" class="btn btn-circle page-scroll">
+          <i class="fa fa-angle-double-down animated"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- About Section -->
+  <section id="about-college" class="container content-section" >
+    <div class="row container">
+      <h2>About The Institute</h2>
+      <p>
+        Sarvajanik Education Society is an emblem of quality and value education for more than ten decades. Sarvajanik College of Engineering & Technology (SCET) takes pride in being part of this elite and noble organization serving for the betterment of the society and the nation by imparting education.
+      </p>
+      <p>
+        This prestigious institute has been engaged in imparting quality technical education in nine different functionally specialized streams of engineering namely Civil, Computer, Electrical, Mechanical, Electronics and Communication, Information Technology, Instrumentation and Control, Chemical and Textile Technology. The institute strives to impart highest level of quality technical education through course curriculum and various professional training programs in advanced areas.</p>
+      </div>
+    </section>
+    <section id="about-department" class="darker-black content-section">
+      <div class="container">
+        <h2 class="department-header">About The Department</h2>
+        <p>
+          The Computer Engineering Department was started in 1995. It is running Bachelor of Computer Engineering with intake of 120 and Master of Computer Engineering with intake of 24 students per batch. The department imparts education to its students with the help of its state-of-the-art computing facilities and highly qualified teaching staff as well as supporting staff. The department continues the journey towards the goal of creating technical excellence which imparts the best knowledge and skills to students with the objective of producing high caliber engineering graduates. A sound theoretical and practical work prepares the students in wider area of computer engineering.
+        </p>
+      </div>
+    </section>
+    <section id="about" class="container content-section">
+      <div class="row container">
+        <h2>About SCET-A-THON</h2>
+        <p>Sarvajanik College of Engineering and Technology is extremely glad to announce a coding competition
+          which is a brainstorm for every students to implement their innovative technical ideas into reality, "SCET-A-THON 2018” which is organized by Computer Engineering Department under the banner of
+          UPDATES 2k18.</br>
+          SCET-A-THON is 12 hours coding competition in which you have to brainstorm innovative ideas and
+          implements ideas into reality for making surrounding smart.</br>
+          It is stated that “Let’s Make Surrounding Smart” so the SCET-A-THON is based on the theme
+          Environment, Health Care and Education through which we make society and environment smart.</br>
+          Hence, the team SCET-A-THON welcomes you all to the new journey to "Let’s Make Surrounding
+          Smart", "SCET-A-THON 2018".</p></br>
+          <div class="text-center">
+            <p style="color:#f66e13;text-align:center;" class="about-img-text"><b>Hackathon Rounds</b></p>
+            <img src="img/round.png" class="img-about text-center"/>
+          </br>
+          <!-- <p style="color:#6b8d3b;padding-top:50px;" class="about-img-text text-center"><b>Price</b></p> -->
+          <img src="img/prizes.png" style="margin-top:20px;" class="img-about"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- General Rules Section -->
+    <section id="generalRules" class="darker-black content-section ">
+      <div class="download-section">
+        <!-- text-center -->
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2" style="text-align: justify;">
+            <h2>Rules</h2>
+            <p>1.	Team Size : 4 Members (Students).</p>
+            <p>2.	All the members must be from same institute.</p>
+            <p>3.	Participants shall accept full responsibility for their own work and devices. </p>
+            <p>4.	No participant shall engage in any malicious/illegal activities. Participants will be immediately disqualified if they are found indulging in malpractice.</p>
+            <p>5.	Participants shall work to follow professional standards, when available, that are most appropriate for the task at hand, departing from these only when ethically or technically justified.</p>
+            <p>6.	Participants shall ensure adequate testing, debugging, and review of software and related documents before submission.</p>
+            <p>7.	Participants shall not use software that is obtained or retained either illegally or unethically, includes using Teamviewer or similar software. Participants will be immediately disqualified if they are found using it.</p>
+            <p>8.	Any malicious attempt will lead to disqualification of the team.</p>
+            <p>9.	Duration of competition is 8 AM to 8 PM on 2<sup>nd</sup> October, 2018.</p>
+            <p>10. Participants are not allowed to exit the venue until the winner announcement. </p>
+            <p>11. Breakfast and lunch will be provided at (SCET College) venue.</p>
+            <p>12. Participants have to bear their own responsibility to safeguard their belongings during the event.</p>
+            <p>13. In case of any emergency or medical assistance, please contact to the organizers.</p>
+            <p>14. Third party frameworks and libraries may be used, but must be declared in the technical prototype demonstration.</p>
+            <p>15. Internet facility and power supply will be provided.</p>
+            <p>16. Periodically progress of the work will be evaluated.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="generalRules_inner" class="content-section" style="background-color: rgba(204,204,204,0.51);">
+      <div class="container">
+        <div class="col-lg-8 col-lg-offset-2" style="text-align: justify;">
+          <strong><h3>How do we submit our idea?</h3></strong>
+          <ul class="list-group">
+            <li style="margin: 0 0 0 0px; line-height:0; list-style-type: none;"><p>1.	Idea submission must be made by team leader of a team only.</p></li>
+            <li style="margin: 0 0 0 0px; line-height:0; list-style-type: none;"><p>2.	Participant should submit abstract(maximum 300 words) and submit idea in PPT/PDF format in the prescribed format available on <a href="./scet-a-thon-ppt-formate.pptx">link</a> on or before 23/09/2018 06:00 PM.</p></li>
+            <li style="margin: 0 0 0 0px; line-height:0; list-style-type: none;"><p>3.	One team can submit only one idea.</p></li>
+            <a href="./scet-a-thon-ppt-formate.pptx"><li style="margin: 0 0 0 0px; line-height:0; list-style-type: none;"><p style="color:red;">Download PPT format</p></li></a>
+          </ul>
+
+          <!--<div >
+          <strong><h3>PPT should contain following points</h3></strong>
+          <ul class="list-group text-center inner_p">
+          <li style="margin: 0 0 0 0px; list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px; ">Theme (Healthcare/Education/Environment)</p></li>
+          <li style="margin: 0 0 0 0px; list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px; ">Problem Definition</p></li>
+          <li style="margin: 0 0 0 0px; list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px; ">Abstract/Problem Description</p></li>
+          <li style="margin: 0 0 0 0px; list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px; ">Modules Description</p></li>
+          <li style="margin: 0 0 0 0px; list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px; "> Innovation in Project</p></li>
+          <li style="margin: 0 0 0 0px; list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px; ">Tools and Technology</p></li>
+          <li style="margin: 0 0 0 0px; list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px; ">Youtube URL of working prototype (Optional)</p></li>
+        </ul>
+      </div>-->
+      <strong><h3 style="margin-bottom: 10px; line-height: 1;">What is a selection criteria?</h3></strong>
+      <!--<h3>1.	Selection Criteria:</h3>
+      <ul class="list-group">
+      <li style="margin: 0 0 0 0px; list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px;">1.	Feasibility</p></li>
+      <li style="margin: 0 0 0 0px; list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px;">2.	Innovation in idea</p></li>
+    </ul>-->
+    <h3>1.	First Round(idea pitching) Criteria:</h3>
+    <ul class="list-group">
+      <li style="margin: 0 0 0 0px; list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px;">1. “Wow” Factor: Based on exciting innovation and surprising solutions to problems.</p></li>
+      <li style="margin: 0 0 0 0px; list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px;">2. Usefulness/Practicality</p></li>
+    </ul>
+    <h3>When will the shortlisted ideas be announced?</h3>
+    <ul class="list-group">
+      <li style="margin: 0 0 0 0px; list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px;">1.	Shortlisted team will be declared on the date <b>25/09/2018</b>, and will be informed  through email.</p></li>
+    </ul>
+    <p style="color:red; font-size:14px;">* Shortlisted team will be awarded with participation certificate</p>
+    <h3>2.	Second Round (Evaluation) Criteria:</h3>
+    <ul class="list-group">
+      <li style="list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px;">1.	Technical Difficulty</p></li>
+      <li style="list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px;">2.	Technology: The solution uses technology to solve the problem.</p></li>
+      <li style="list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px;">3.	Functionality</p></li>
+      <li style="list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px;">4.	Level of completion of the project</p></li>
+    </ul>
+    <h3>What are the prizes to be won?</h3>
+    <ul class="list-group">
+      <li style="margin: 0 0 0 3px; list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px;">Winner : Rs. 15000 Cash Prize </p></li>
+      <li style="margin: 0 0 0 3px; list-style-type: none;"><p style="line-height: 1; margin-bottom: 5px;">Second Winner  : Rs. 10000 Cash Prize</p></li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!-- Schedule Section -->
+<section id="schedule" class="content-section">
+  <div class="download-section">
+    <div class="container m_pt">
+      <div class="m_card-view ">
+        <h2 style="text-align: center;">Schedule</h2>
+        <p style="text-align: center;">2<sup>nd</sup> october 2018</br>8 AM to 8 PM</br></p>
+        <div class="row text-center mtable ">
+          <div class="row" style="margin-left:0px;margin-right:0px;">
+            <div class="when col-lg-6 col-md-6 col-sm-4 col-xs-4">07:00 am</div>
+            <div class="what col-lg-6 col-md-6 col-sm-8 col-xs-8"style="text-align:left;">Registration/Reporting</div></br>
+            <div class="when col-lg-6 col-md-6 col-sm-4 col-xs-4">08:00 am</div>
+            <div class="what col-lg-6 col-md-6 col-sm-8 col-xs-8"style="text-align:left;">Coding round starts</div></br>
+            <div class="when col-lg-6 col-md-6 col-sm-4 col-xs-4">10:30 pm</div>
+            <div class="what col-lg-6 col-md-6 col-sm-8 col-xs-8"style="text-align:left;">Evaluation Round</div></br>
+            <div class="when col-lg-6 col-md-6 col-sm-4 col-xs-4">12:30 pm</div>
+            <div class="what col-lg-6 col-md-6 col-sm-8 col-xs-8"style="text-align:left;">Lunch break</div></br>
+            <div class="when col-lg-6 col-md-6 col-sm-4 col-xs-4">04:30 pm</div>
+            <div class="what col-lg-6 col-md-6 col-sm-8 col-xs-8"style="text-align:left;">Tea break</div></br>
+            <div class="when col-lg-6 col-md-6 col-sm-4 col-xs-4">08:00 pm</div>
+            <div class="what col-lg-6 col-md-6 col-sm-8 col-xs-8"style="text-align:left;">Final evaluation</div></br>
+            <div class="when col-lg-6 col-md-6 col-sm-4 col-xs-4">08:30 pm</div>
+            <div class="what col-lg-6 col-md-6 col-sm-8 col-xs-8"style="text-align:left;">Winner announcement</div></br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<script>
+            $('.card__author').on('click',function(){
+                $('.card-reveal').css('display','block');
+                $('.card').css('overflow','scroll');
+            });
+</script>
+<section id="projects" class="darker-black content-section" style="text-align: justify;">
+  <div class="download-section">
+    <div class="container">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2 class="text-center">Theme</h2>
+        <p>
+          <a href="#"><strong>Education</strong></a> </br>
+          <!-- <img src="http://scetathon.updates2k18.in/img/everloop.png" style="float:right; width:150px; height:150px;"> -->
+          Education provides the platform to transform education in an environment where the best ideas can be incubated and implemented that benefits to campus, management, and the next generations of students and instructors community. Ideas can be implemented related to digital teaching and assessment, educational learning games, social media in education, issues related to education, parking, transportation and so on.
+        </p>
+        <p>
+          <a href="#"><strong>Environment</strong></a> </br>
+          By the year 2030, the antagonistic per capita ecological effect of urban areas must be decreased. Unique consideration ought to be given to air quality and city and other waste administration. What's more, we need to beat a lot of difficulties for that. All the contamination of urban areas must be diminished. Emission of smokes from vehicles and diverse enterprises are taking the air pollution to the next level. Measures ought to be taken to keep the outflow level in charge. Sound pollution is another wonder which is currently contributing in decay of city condition. Sounds produced by vehicles are influencing kid, old people and patients antagonistically. A major number of enterprises including instant article of clothing processing plants are being built everywhere throughout the city. These all are in charge of natural pollution of cities. Waste dumping in each place ought to be ceased. Nationals ought to be motivated to utilize dustbins to dump waste.
+        </p>
+        <p>
+          <a href="#"><strong>Healthcare</strong></a> </br>
+          As the healthcare technologies are advancing, there’s an increased engagement and consciousness of consumers when it comes to their health. In such a scenario, the demand for remote care is more encouraged than ever. However, the current healthcare ecosystems are not equipped with technologies that can improve patient care by updating them with real-time patient information and allowing them to take proactive measures for treatment. Even IoT solution for the healthcare sector allows hospitals to improve the care quality while focusing on overall expenditure reduction. The team can think of providing solutions for issues such as Disease management,Enhancing patient experience,Better management of drugsImproving treatment outcomes.
+          <!-- <ul class="list-group">
+          <li><p style="margin: 0 0 5 0px;">Disease management</p></li>
+          <li><p style="margin: 0 0 5 0px;">Enhancing patient experience</p></li>
+          <li><p style="margin: 0 0 5 0px;">Better management of drugs</p></li>
+          <li><p style="margin: 0 0 5 0px;">Improving treatment outcomes</p></li>
+        </ul> -->
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Location Section -->
+<section id="location" class="content-section text-center">
+  <div class="container">
+    <h2>Location</h2>
+           <div class="m_map">
+    <div id="map"></div>
+    <script>
+    /*
+    function initMap() {
+      var uluru = {lat: 21.1822959, lng: 72.8062178};
+      var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: uluru});
+        var marker = new google.maps.Marker({position: uluru, map: map});
+      }*/
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 21.1822959, lng: 72.8062178},
+          zoom: 8
+        });
+      }
+      </script>
+      <script async defer  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfAAzxU_21-nsFeVTm8aS3NOzXHnDA8lI&callback=initMap">
+      </script>
+
+      <!-- <div class="m_map">
+    //  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.348083667551!2d72.80011320000001!3d21.178327000000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e771bf220d9%3A0xbdd1676277c8bb1!2sSarvjanik+College+Of+Engineering+%26+Technology!5e0!3m2!1sen!2sin!4v1435982050594" frameborder="0" style="border: 0px; pointer-events: none; width: 100%; height: 100%; margin-bottom: 25px;" allowfullscreen=""></iframe>
+
+  -->  </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="darker-black container content-section" style="background-color:rgba(35,34,66,1);">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" style="text-align:left;">
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <h1 class="text-center">Register</h1>
+        <div class="student1-data" style="position: relative;">
+          <div class="container demo-card-wide mdl-card mdl-shadow--8dp" style="position: relative;">
+
+            <label style="font-weight:500;font-Size:25px;color:rgba(160, 160, 160,1);">About Idea</label>
+            <div class="form-group required">
+              <label class="control-label" for="input9">Title: </label>
+              <input type="text" class="title form-control not-null" id="input9" placeholder="Enter Title" required>
+            </div>
+            <div class="form-group required">
+              <label class="control-label" for="input10">Leader: </label>
+              <input type="text" class="form-control leader not-null" id="input10" placeholder="Enter Leader Name" required>
+            </div>
+            <div class="form-group required">
+              <label class="control-label" for="input11">Abstract: </label>
+              <textarea rows="5" class="form-control abstract not-null" id="input11" placeholder="maximum 300 words" required></textarea>
+            </div>
+            <div class="form-group required">
+              <label class="control-label" for="input12">File: </label>
+              <input type="file" name='module_ppt' id='module_ppt' class="file_exist" placeholder="Upload PPT" accept="application/pdf,application/vnd.ms-powerpoint,application/vnd.oasis.opendocument.presentation" required>
+              <a href="./scet-a-thon-ppt-formate.pptx"><p style="color:red;">Download PPT format</p></a>
+            </div>
+            <div style="border-color: rgba(255,255,255,0.1);border-style:solid; border-width:1px; border-radius:15px;">
+              <div class="student1" id="student1" style="padding-top:25px;">
+                <h1 class="text-center" >Student 1</h1>
+                <div class="form-group required">
+                  <label class="control-label" for="input2">Name: </label>
+                  <input type="text" class="form-control name1 not-null" id="input2" placeholder="Enter name" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input3">Email: </label>
+                  <input type="email" class="form-control email1 not-null email-validation" id="input3" placeholder="Enter email" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input4">Phone No: </label>
+                  <input type="text" class="phone-number form-control phone1 not-null" id="input4" placeholder="Enter phone number" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="input5">Enrollment No: </label>
+                  <input type="number" class="form-control enroll1" id="input5" placeholder="Enter enrollment number">
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input6">College: </label>
+                  <input type="text" class="form-control college1 not-null" id="input6"  placeholder="Enter college name" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input7">Branch: </label>
+                  <input type="text" class="form-control branch1 not-null" id="input7" placeholder="Enter branch" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input8">Semester: </label>
+                  <input type="number" class="year form-control year1 not-null" id="input8" placeholder="Enter Semester" required>
+                </div>
+              </div>
+              <div class="student2" id="student2" style="padding-top:25px;">
+                <h1 class="text-center" >Student 2</h1>
+                <div class="form-group required">
+                  <label class="control-label" for="input2">Name: </label>
+                  <input type="text" class="form-control name2 not-null" id="input2" placeholder="Enter name" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input3">Email: </label>
+                  <input type="email" class="form-control email2 not-null email-validation" id="input3" placeholder="Enter email" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input4">Phone No: </label>
+                  <input type="text" class="phone-number form-control phone2 not-null" id="input4" placeholder="Enter phone number" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="input5">Enrollment No: </label>
+                  <input type="number" class="form-control enroll2" id="input5" placeholder="Enter enrollment number">
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input6">College: </label>
+                  <input type="text" class="form-control college2 not-null" id="input6"  placeholder="Enter college name" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input7">Branch: </label>
+                  <input type="text" class="form-control branch2 not-null" id="input7" placeholder="Enter branch" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input8">Semester: </label>
+                  <input type="number" class="year form-control year2 not-null" id="input8" placeholder="Enter Semester" required>
+                </div>
+              </div>
+              <div class="student3" id="student3" style="padding-top:25px;">
+                <h1 class="text-center" >Student 3</h1>
+                <div class="form-group required">
+                  <label class="control-label" for="input2">Name: </label>
+                  <input type="text" class="form-control name3 not-null" id="input2" placeholder="Enter name" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input3">Email: </label>
+                  <input type="email" class="form-control email3 not-null email-validation" id="input3" placeholder="Enter email" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input4">Phone No: </label>
+                  <input type="text" class="phone-number form-control phone3 not-null" id="input4" placeholder="Enter phone number" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="input5">Enrollment No: </label>
+                  <input type="number" class="form-control enroll3" id="input5" placeholder="Enter enrollment number">
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input6">College: </label>
+                  <input type="text" class="form-control college3 not-null" id="input6"  placeholder="Enter college name" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input7">Branch: </label>
+                  <input type="text" class="form-control branch3 not-null" id="input7" placeholder="Enter branch" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input8">Semester: </label>
+                  <input type="number" class="year form-control year3 not-null" id="input8" placeholder="Enter Semester" required>
+                </div>
+              </div>
+              <div class="student4" id="student4" style="padding-top:25px;">
+                <h1 class="text-center" >Student 4</h1>
+                <div class="form-group required">
+                  <label class="control-label" for="input2">Name: </label>
+                  <input type="text" class="form-control name4 not-null" id="input2" placeholder="Enter name" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input3">Email: </label>
+                  <input type="email" class="form-control email4 not-null email-validation" id="input3" placeholder="Enter email" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input4">Phone No: </label>
+                  <input type="text" class="phone-number form-control phone4 not-null" id="input4" placeholder="Enter phone number" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="input5">Enrollment No: </label>
+                  <input type="number" class="form-control enroll4" id="input5" placeholder="Enter enrollment number">
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input6">College: </label>
+                  <input type="text" class="form-control college4 not-null" id="input6"  placeholder="Enter college name" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input7">Branch: </label>
+                  <input type="text" class="form-control branch4 not-null" id="input7" placeholder="Enter branch" required>
+                </div>
+
+                <div class="form-group required">
+                  <label class="control-label" for="input8">Semester: </label>
+                  <input type="number" class="year form-control year4 not-null" id="input8" placeholder="Enter Semester" required>
+                </div>
+                <div class="required" >
+                  <input type="button" style="margin-top:20px;margin-bottom:20px;" class="submit-btn btn btn-primary form-control" value="SUBMIT" required>
+                </div>
+              </div>
+            </div>
+            <div style="text-align:center;margin-top:40px;">
+              <a href="#student1"><span class="step1 options">1</span></a>
+              <a href="#student2"><span class="step2 options">2</span></a>
+              <a href="#student3"><span class="step3 options">3</span></a>
+              <a href="#student4"><span class="step4 options">4</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</section>
+
+
+<script type="text/javascript">
+$('.college1').keyup(function(){
+  $('.college2').val($('.college1').val());
+  $('.college3').val($('.college1').val());
+  $('.college4').val($('.college1').val());
+});
+$('.branch1').keyup(function(){
+  $('.branch2').val($('.branch1').val());
+  $('.branch3').val($('.branch1').val());
+  $('.branch4').val($('.branch1').val());
+});
+$(document).ready(function(){
+
+  // $('#m_anim').fadeIn("slow");
+
+
+  $('.student3').hide();
+  $('.student2').hide();
+  $('.student1').show();
+  $('.student4').hide();
+  $('.step1').addClass('selection-options');
+
+  $('.step1').on('click',function(){
+    $('.step1').addClass('selection-options');
+    $('.step2').removeClass('selection-options');
+    $('.step3').removeClass('selection-options');
+    $('.step4').removeClass('selection-options');
+    $('.student1').show();
+    $('.student2').hide();
+    $('.student3').hide();
+    $('.student4').hide();
+  });
+  $('.step2').on('click',function(){
+    $('.step1').removeClass('selection-options');
+    $('.step3').removeClass('selection-options');
+    $('.step4').removeClass('selection-options');
+    $('.step2').addClass('selection-options');
+    $('.student2').show();
+    $('.student1').hide();
+    $('.student3').hide();
+    $('.student4').hide();
+  });
+  $('.step3').on('click',function(){
+    $('.step1').removeClass('selection-options');
+    $('.step2').removeClass('selection-options');
+    $('.step4').removeClass('selection-options');
+    $('.step3').addClass('selection-options');
+    $('.student3').show();
+    $('.student1').hide();
+    $('.student2').hide();
+    $('.student4').hide();
+  });
+  $('.step4').on('click',function(){
+    $('.step1').removeClass('selection-options');
+    $('.step2').removeClass('selection-options');
+    $('.step3').removeClass('selection-options');
+    $('.step4').addClass('selection-options');
+    $('.student4').show();
+    $('.student1').hide();
+    $('.student2').hide();
+    $('.student3').hide();
+  });
+
+  $('.submit-btn').on('click', function(){
+    var confirmation = confirm("Please check your data before registration!\nAre you sure?");
+
+    if(!confirmation) {
+      return false;
+    }
+
+    var status = true;
+
+    $('.not-null').each(function() {
+      if($(this).val() == "" || $(this).val() == " ") {
+        status = false;
+        alert('Please enter all required data!');
+        return false;
+      }
+    });
+    $('.file_exist').each(function(){
+      if($(this).val() == "" || $(this).val() == " ") {
+        status = false;
+        alert('Please Upload File !');
+        return false;
+      }
+    });
+
+    if(status == false) {
+      return false;
+    }
+
+    $('.email-validation').each(function(){
+      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      if(regex.test($(this).val()) == false) {
+        alert("Please enter valid email address!");
+        status = false;
+        return false;
+      }
+    });
+
+    $(function(){
+
+      $(':input[type=number]').on('mousewheel',function(e){ $(this).blur(); });
+
+    });
+
+
+    $('.phone-number').each(function(){
+      var regex = /^[0-9]+$/;
+
+      if($(this).val().match(regex)){
+        if(regex.test($(this).val()) == false || $(this).val().length != 10) {
+          alert("Please enter valid phone number upto 10-Digit !");
+          status = false;
+          return false;
+        }
+      }else{
+        alert("All Number Shuld be digit!");
+        status = false;
+        return false;
+      }
+    });
+
+    $('.year').each(function(){
+      var regex = /^[1-9]+$/;
+      if(regex.test($(this).val()) == false || ($(this).val() < 1 || $(this).val() > 10)) {
+        alert("Please enter Semester between 1 to 10!");
+        status = false;
+        return false;
+      }
+    });
+
+    if(status == false) {
+      return false;
+    }
+
+    var student1 = [];
+    student1[0] = $('.phone1').val().trim();
+    student1[1] = $('.name1').val().trim();
+    student1[2] = $('.email1').val().trim();
+    student1[3] = $('.phone1').val().trim();
+    student1[4] = $('.enroll1').val().trim();
+    if(student1[4] == "") {
+      student1[4] = 0;
+    }
+    student1[5] = $('.college1').val().trim();
+    student1[6] = $('.branch1').val().trim();
+    student1[7] = $('.year1').val().trim();
+
+    var student2 = [];
+    student2[0] = student1[0];
+    student2[1] = $('.name2').val().trim();
+    student2[2] = $('.email2').val().trim();
+    student2[3] = $('.phone2').val().trim();
+    student2[4] = $('.enroll2').val().trim();
+    if(student2[4] == "") {
+      student2[4] = 0;
+    }
+    student2[5] = $('.college2').val().trim();
+    student2[6] = $('.branch2').val().trim();
+    student2[7] = $('.year2').val().trim();
+
+    var student3 = [];
+    student3[0] = student1[0];
+    student3[1] = $('.name3').val().trim();
+    student3[2] = $('.email3').val().trim();
+    student3[3] = $('.phone3').val().trim();
+    student3[4] = $('.enroll3').val().trim();
+    if(student3[4] == "") {
+      student3[4] = 0;
+    }
+    student3[5] = $('.college3').val().trim();
+    student3[6] = $('.branch3').val().trim();
+    student3[7] = $('.year3').val().trim();
+
+    var student4 = [];
+    student4[0] = student1[0];
+    student4[1] = $('.name4').val().trim();
+    student4[2] = $('.email4').val().trim();
+    student4[3] = $('.phone4').val().trim();
+    student4[4] = $('.enroll4').val().trim();
+    if(student4[4] == "") {
+      student4[4] = 0;
+    }
+    student4[5] = $('.college4').val().trim();
+    student4[6] = $('.branch4').val().trim();
+    student4[7] = $('.year4').val().trim();
+
+    var project = [];
+    project[0] = student1[0];
+    project[1] = $('.title').val().trim();
+    project[2] = $('.leader').val().trim();
+    project[3] = $('.abstract').val().trim();
+    project[4] = student1[0];
+
+    var data = [student1, student2, student3, student4, project];
+
+    var file_data = $('#module_ppt').prop('files')[0];
+    var form_data = new FormData();
+    form_data.append('module_ppt', file_data);
+    form_data.append('data', JSON.stringify(data));
+
+    if(status == true) {
+      $.ajax({
+        url:"./register/index.php",
+        dataType: 'text',
+        cache: false,
+        contentType: false,
+        processData: false,
+        type: "post",
+        data: form_data,
+        success: function(data){
+          alert("Registration successfull!" + "\nYour Team ID for SCET-A-THON is " + data + ".\nImportant: Please make note of your team id!");
+          // window.location.href="/";
+        },
+        error: function(data){
+          alert(data['responseText'] + "\nRegistration failed! Please try again");
+        }
+      });
+    }
+  });
+});
+
+</script>
+
+<!-- Footer -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+<section class="container content-section mfooter">
+  <div class="text-center">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <b>Patron :</b></br>Dr. Vaishali Mungurvadi, Principal<br>Sarvajanik College of Engineering and Technology</div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <b>Convener :</b></br>Prof.(Dr.)Keyur Rana, HOD<br>Department of Computer Engineering
+        </div>
+
+      </div>
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-md-6 col-sm-6 col-xs-6"><b>Co-ordinator:</b></br>Prof. Jaydeep Gheewala</br>Prof. Jayesh Chaudhary</br>Prof. Jaydeep Barad</br>Prof. Fagun Vankawala</div>
+        <div class="col-md-6 col-sm-6 col-xs-6"><b>Organizing Committee:</b></br>Prof. Dhartri Pandya</br>Prof. Bhavesh Patel</div>
+        <!-- <div class="col-md-6 col-sm-6 col-xs-6"><b>Web Designer:</b></br>Keval Navadiya</br>Smit Jivani</br>Parth Roy</div> -->
+      </div>
+    </div>
+
+  </section>
+
+  <footer id="footer" >
+    <div class="container text-center">
+      <h3 style="font-size: 1.15em;">DEVELOPED BY</h3>
+      <div class="row" >
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <p style="text-align:center;">Smit Jivani</p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <p style="text-align:center;">Parth Roy</p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <p style="text-align:center;">Keval Navadiya</p>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center">
+      <h3 style="font-size: 1.15em;margin:20px;">CONTACT</h3>
+      <hr style="margin-bottom:20px;">
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <i class="fas fa-map-marker-alt" style="color: #cbd1db;"></i>
+          <p style="text-align:center;">SCET, Athwagate, Surat-395001</br>
+          Contact No : 0261-2240146-302 (Ext.)</br>
+          <a href="http://scet.ac.in">scet.ac.in</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <i class="far fa-envelope" style="color: #cbd1db"></i>
+          <p style="text-align:center;">scet.hackathon@scet.ac.in</p><br>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <i class="fas fa-mobile" style="color: #cbd1db"></i>
+          <p style="text-align:center;">+91 9723321000
+            <br>
+            <small>(Vivek Sanepara)</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="./vendor/jquery/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="./js/grayscale.min.js"></script>
+</body>
+</html>
